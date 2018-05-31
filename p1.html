@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>dreapta</title>
+                                                       
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body text="#000000" link="#0000ee" alink="#0000ee" vlink="#551a8b"
+ bgcolor="#ffcccc">
+           
+<div align="center">&nbsp;<br>
+      <big><big><big><big>Tipuri de date obiectuale. &Icirc;ncapsulare</big></big></big></big></div>
+      <br>
+      <br>
+      <br>
+      Un tip de date abstract (ADT) este o entitate caracterizat&atilde;
+printr-o    structur&atilde; de date &#537;i un ansamblu de opera&thorn;ii aplicabile
+acestor    date. Consider&acirc;nd, &icirc;n rezolvarea unei probleme de
+gestiune a  accesului utilizatorilor la un anumit site, tipul abstract USER,
+vom obseva   c&atilde; sunt multe date ce caracterizeaz&atilde; un utilizator
+Internet.   Totu&#537;i se va &#539;ine cont doar de datele semnificative pentru problema
+dat&atilde;.   Astfel, &#8221;culoarea ochilor&#8221; este irelevant&atilde; &icirc;n
+acest caz, &icirc;n   timp ce &#8221;data na&#537;terii&#8221; poate fi important&atilde;.
+&Icirc;n aceea&#537;i idee,   opera&#539;ii specifice ca &#8221;se &icirc;nregistreaz&atilde;&#8221;,
+&#8221;comand&atilde; on-line&#8221;   pot fi relevante, &icirc;n timp ce opera&thorn;ia
+&#8221;man&acirc;nc&atilde;&#8221;  nu este, &icirc;n cazul nostru. Evident, nici nu
+se pun &icirc;n discu&#539;ie  date sau opera&#539;ii nespecifice (&#8221;num&atilde;rul
+de laturi&#8221; sau ac&#539;iunea &#8221;zboar&atilde;&#8221;).    Opera&#539;iile care sunt accesibile
+din afara entit&atilde;&#539;ii formeaz&atilde;    interfa&#539;a acesteia. Astfel,
+opera&#539;ii interne cum ar fi conversia datei de   na&#537;tere la un num&atilde;r
+standard calculat de la 01.01.1900 nu fac parte   din interfa&thorn;a tipului
+de date abstract, &icirc;n timp ce opera&thorn;ia    &#8221;plaseaz&atilde; o comand&atilde;
+on-line&#8221; face parte, deoarece permite  interac&#539;iunea  cu alte obiecte (SITE,
+STOC etc.) O instan&#539;&atilde; a unui  tip de date abstract  este o &#8221;concretizare&#8221;
+a tipului respectiv, format&atilde;  din valori efective  ale datelor. Un
+tip de date obiectual este un tip de  date care implementeaz&atilde;  un
+tip de date abstract. Vom numi opera&#539;iile  implementate &icirc;n cadrul 
+tipului de date abstract metode. Spunem c&atilde;  datele &#537;i metodele sunt
+ membrii unui tip de date obiectual. Folosirea unui  astfel de tip presupune:
+ existen&#539;a defini&#539;iei acestuia, apelul metodelor  &#537;i accesul la date. Un
+exemplu  de-acum clasic de tip de date abstract este  STIVA. Ea poate avea
+ca date:  numerele naturale din stiv&atilde;, capacitatea  stivei, v&acirc;rful
+etc.  Iar opera&#539;iile specifice pot fi: introducerea &icirc;n stiv&atilde;
+(push)  &#537;i extragerea din stiv&atilde; (pop). La implementarea  tipului STIVA,
+vom  defini o structura de date care s&atilde; re&thorn;in&atilde;  valorile
+memorate  &icirc;n stiv&atilde; &#537;i c&acirc;mpuri de date simple pentru: capacitate,
+ num&atilde;r de elemente etc. Vom mai defini metode (subprograme) capabile
+ s&atilde; creeze o stiv&atilde; vid&atilde;, care s&atilde; introduc&atilde; 
+ o valoare &icirc;n stiv&atilde;, s&atilde; extrag&atilde; valoarea din v&acirc;rful 
+ stivei, s&atilde; testeze dac&atilde; stiva este vid&atilde; sau dac&atilde; 
+ stiva este plin&atilde; etc. Crearea unei instan&thorn;e noi a unui tip obiectual,
+ presupune opera&thorn;ii specifice de &#8221;construire&#8221; a noului obiect, metoda
+ corespunz&atilde;toare purt&acirc;nd numele de constructor. Analog, la desfiin&thorn;area
+ unei instan&thorn;e &#537;i eliberarea spa&thorn;iului de memorie<br>
+      8 Introducere &icirc;n .Net Framework (Suport de curs)<br>
+      aferent datelor sale, se aplic&atilde; o metod&atilde; specific&atilde; 
+  numit&atilde; destructor1. rice stiv&atilde; golit&atilde;, p&acirc;n&atilde; 
+  ce r&atilde;m&acirc;ne o singur&atilde; stiv&atilde;. De observat c&atilde; 
+  toate aceste prelucr&atilde;ri recurg la datele, constructorul, destructorul 
+  &#537;i la metodele din interfa&thorn;a tipului STIVA descris mai sus. Principalul 
+  tip obiectual &icirc;nt&acirc;lnit &icirc;n majoritatea mediilor de dezvoltare 
+  (Viisual Basic, Delphi, C++, Java, C#) poart&atilde; numele de clas&atilde; 
+  (class). Exist&atilde; &#537;i alte tipuri obiectuale (struct, object). O instan&thorn;&atilde; 
+  a unui tip obiectual poart&atilde; numele de obiect. La implementare, datele 
+  &#537;i metodele asociate trebuie s&atilde; fie complet &#537;i corect definite, astfel
+  &icirc;nc&acirc;t utilizatorul s&atilde; nu fie nevoit s&atilde; &thorn;in&atilde;
+  cont de detalii ale acestei implement&atilde;ri. El va accesa datele, prin
+  intermediul propriet&atilde;&thorn;ilor &#537;i va efectua opera&thorn;iile,
+prin  intermediul metodelor puse la dispozi&thorn;ie de tipul obiectual definit.
+  Spunem c&atilde; tipurile de date obiectuale respect&atilde; principiul
+&icirc;ncapsul&atilde;rii.  Astfel, programatorul ce utilizeaz&atilde; un
+tip obiectual CONT (&icirc;n  banc&atilde;) nu trebuie s&atilde; poarte grija
+modului cum sunt reprezentate  &icirc;n memorie datele referitoare la un
+cont sau a algoritmului prin care  se realizeaz&atilde; actualizarea soldului
+conform opera&thorn;iilor de depunere,  extragere &#537;i aplicare a dob&acirc;nzilor.
+EL va utiliza unul sau mai multe  conturi (instan&thorn;e ale tipului CONT),
+acces&acirc;nd propriet&atilde;&thorn;ile  &#537;i metodele din interfa&thorn;&atilde;,
+realizatorul tipului obiectual asum&acirc;ndu-&#537;i   acele griji &icirc;n momentul
+definirii tipului CONT. Permi&thorn;&acirc;nd   extensia tipurilor de date
+abstracte, clasele pot avea la implementare: &#8226;  date &#537;i metode caracterisitice
+fiec&atilde;rui obiect din clas&atilde; (membri  de tip instan&thorn;&atilde;),
+&#8226; date &#537;i metode specifice clasei (membri de tip clas&atilde;). Astfel, clasa
+STIVA poate beneficia, &icirc;n plus, &#537;i de date ale clasei cum ar fi: num&atilde;rul
+de stive generate, num&atilde;rul  maxim sau num&atilde;rul minim de componente
+ale stivelor existente etc. Modificatorul static plasat la definirea unui
+membru al clasei face ca acela s&atilde; fie un membru de clas&atilde;, nu
+unul de tip instan&thorn;&atilde;.  Dac&atilde; &icirc;n cazul membrilor
+nestatici, exist&atilde; c&acirc;te un exemplar al membrului respectiv pentru
+fiecare instan&thorn;&atilde; a clasei, membrii statici sunt unici, fiind
+accesa&thorn;i &icirc;n comun de toate instan&thorn;ele clasei. Mai mult,
+membrii statici pot fi referi&thorn;i chiar &#537;i f&atilde;r&atilde; a crea
+vreo instan&thorn;&atilde; a clasei respective.<br>
+     <br>
+     <br>
+     <a href="C:%5CUsers%5CLenovo%5CDesktop%5Cproiect%5Cpag3.html"></a><a
+ href="file:///C:/Users/Lenovo/Desktop/proiect/pag3.html"><small><small><img
+ src="back-button_318-108687.jpg" alt="" width="100" height="100">
+ </small></small></a>    <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+      <br>
+         <br>
+     <br>
+    <br>
+   <br>
+  <br>
+ <br>
+</body>
+</html>
